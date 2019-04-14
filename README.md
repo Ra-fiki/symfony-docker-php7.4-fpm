@@ -12,18 +12,18 @@ and in line 9 `root /var/www/symfony/public;` instead `symfony` give our name (w
 
 We pass the console to the project directory and call the command
 
-* docker-compose build
+* `docker-compose build`
 
 and after finishing
 
-* docker-compose up -d
+* `docker-compose up -d`
 
 # Creation of directories and import of the libraries #
 
 Created container with php, in our case it is `symfony_php-fpm`
 and the project will be called `symfony` so we execute the command in container
 
-* docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"
+* docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton `symfony`"
 
 If we have chosen a different name for the project then `symfony` replace the one selected in the command
 
@@ -31,8 +31,8 @@ If we have chosen a different name for the project then `symfony` replace the on
 
 # Summary #
 
-* docker-compose build
+* `docker-compose build`
 
-* docker-compose up -d
+* `docker-compose up -d`
 
-* docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"
+* `docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
