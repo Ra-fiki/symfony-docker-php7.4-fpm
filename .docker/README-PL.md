@@ -18,6 +18,9 @@ a po zakończeniu
 
 * `docker-compose up -d`
 
+W kontenerze www-data jest właścicielem plików. Identyfikator użytkownika jest mapowany na użytkownika systemu (jak „zalecają”)
+więc jeśli będziesz wchodził do kontenera używaj `docker exec -it -u www-data ...`
+
 # Utworzenie katalogów i zaciągnięcie bibliotek #
 
 Utworzony kontener z php-em, w naszym przypadku to `symfony_php-fpm`
