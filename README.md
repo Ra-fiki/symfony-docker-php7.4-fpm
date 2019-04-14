@@ -18,6 +18,9 @@ and after finishing
 
 * `docker-compose up -d`
 
+In container www-data is the owner of the files. User Id is mapped on your system user(as "they" recommend)
+so if you will enter container use `docker exec -it -u www-data ...`
+
 # Creation of directories and import of the libraries #
 
 Created container with php, in our case it is `symfony_php-fpm`
