@@ -3,6 +3,8 @@ HOW TO
 
 # SZYBKI START #
 
+* Odkomentuj w pliku `docker-compose.yml` jedną bazę danych (jeśli będziesz używać)
+
 * `docker-compose build`
 
 * `docker-compose up -d`

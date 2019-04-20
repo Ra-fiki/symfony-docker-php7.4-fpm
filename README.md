@@ -3,6 +3,8 @@ HOW TO
 
 # FAST START #
 
+* Uncomment in file `docker-compose.yml` one of the databases (if you will use)
+
 * `docker-compose build`
 
 * `docker-compose up -d`
@@ -10,7 +12,6 @@ HOW TO
 * `docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
 
 And you have all ready.
-
 
 # Slow set - Container preparation #
 
