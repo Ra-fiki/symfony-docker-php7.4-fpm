@@ -12,7 +12,7 @@ HOW TO
 And you have all ready.
 
 
-#Slow set - Container preparation #
+# Slow set - Container preparation #
 
 We come up with the name of our project, e.g. `symfony`
 
