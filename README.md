@@ -43,11 +43,3 @@ and the project will be called `symfony` so we execute the command in container
 If we have chosen a different name for the project then `symfony` replace the one selected in the command
 
 * docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton `project_name`"
-
-# Summary #
-
-* `docker-compose build`
-
-* `docker-compose up -d`
-
-* `docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`

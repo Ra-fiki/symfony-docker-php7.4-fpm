@@ -43,11 +43,3 @@ a projekt będzie się nazywał `symfony` więc wykonujemy polecenie na konenerz
 Jeśli wybraliśmy inną nazwę dla projektu to musimy nazwę `symfony` zastąpić wybraną w poleceniu
 
 * composer create-project symfony/website-skeleton `nazwa_projektu`
-
-# Podsumowanie #
-
-* docker-compose build
-
-* docker-compose up -d
-
-* docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"
