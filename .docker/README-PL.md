@@ -1,7 +1,17 @@
 HOW TO
 ==================================
 
-# Przygotowanie kontenerów #
+# SZYBKI START #
+
+* `docker-compose build`
+
+* `docker-compose up -d`
+
+* `docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
+
+I wszystko jest już postawione
+
+# Wolny start - Przygotowanie kontenerów #
 
 Wymyślamy nazwę naszego projektu, np `symfony`
 
