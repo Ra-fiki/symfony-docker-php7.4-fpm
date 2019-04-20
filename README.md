@@ -1,7 +1,18 @@
 HOW TO
 ==================================
 
-# Container preparation #
+# FAST START #
+
+* `docker-compose build`
+
+* `docker-compose up -d`
+
+* `docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
+
+And you have all ready.
+
+
+#Slow set - Container preparation #
 
 We come up with the name of our project, e.g. `symfony`
 
