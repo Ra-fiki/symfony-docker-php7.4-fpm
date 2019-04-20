@@ -9,7 +9,13 @@ HOW TO
 
 * `docker-compose up -d`
 
-* `docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
+web:
+
+* `docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
+
+microservices, console applications or APIs:
+
+* `docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/skeleton symfony"`
 
 I wszystko jest już postawione
 
@@ -35,10 +41,10 @@ więc jeśli będziesz wchodził do kontenera używaj `docker exec -it -u www-da
 
 # Utworzenie katalogów i zaciągnięcie bibliotek #
 
-Utworzony kontener z php-em, w naszym przypadku to `symfony_php-fpm`
+Utworzony kontener z php-em, w naszym przypadku to `symfony-php-fpm`
 a projekt będzie się nazywał `symfony` więc wykonujemy polecenie na konenerze:
 
-* docker exec -it -u www-data symfony_php-fpm bash -c "composer create-project symfony/website-skeleton symfony"
+* docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton symfony"
 
 Jeśli wybraliśmy inną nazwę dla projektu to musimy nazwę `symfony` zastąpić wybraną w poleceniu
 
