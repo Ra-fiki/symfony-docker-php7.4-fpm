@@ -41,7 +41,6 @@ RUN apt-get update \
     && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
 COPY etc /etc
-COPY usr /usr
 
 RUN phpenmod php-ini-config \
     && phpenmod xdebug-docker
