@@ -11,11 +11,11 @@ HOW TO
 
 web:
 
-* `docker exec -it -u www-data symfony-php-fpm bash -c "cd symfony && composer create-project symfony/website-skeleton symfony"`
+* `docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
 
 microservices, console applications or APIs:
 
-* `docker exec -it -u www-data symfony-php-fpm bash -c "cd symfony && composer create-project symfony/skeleton symfony"`
+* `docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/skeleton symfony"`
 
 I wszystko jest już postawione
 
@@ -44,11 +44,11 @@ więc jeśli będziesz wchodził do kontenera używaj `docker exec -it -u www-da
 Utworzony kontener z php-em, w naszym przypadku to `symfony-php-fpm`
 a projekt będzie się nazywał `symfony` więc wykonujemy polecenie na konenerze:
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer create-project symfony/website-skeleton symfony"
+* docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton symfony"
 
 Jeśli wybraliśmy inną nazwę dla projektu to musimy nazwę `symfony` zastąpić wybraną w poleceniu
 
-* composer create-project symfony/website-skeleton `nazwa_projektu`
+* docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton `nazwa_projektu`"
 
 # Połączenie do bazy danch #
 

@@ -11,11 +11,11 @@ HOW TO
 
 web:
 
-* `docker exec -it -u www-data symfony-php-fpm bash -c "cd symfony && composer create-project symfony/website-skeleton symfony"`
+* `docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton symfony"`
 
 microservices, console applications or APIs:
 
-* `docker exec -it -u www-data symfony-php-fpm bash -c "cd symfony && composer create-project symfony/skeleton symfony"`
+* `docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/skeleton symfony"`
 
 And you have all ready.
 
@@ -44,8 +44,15 @@ so if you will enter container use `docker exec -it -u www-data ...`
 Created container with php, in our case it is `symfony-php-fpm`
 and the project will be called `symfony` so we execute the command in container
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer create-project symfony/website-skeleton `symfony`"
+* docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton `symfony`"
 
 If we have chosen a different name for the project then `symfony` replace the one selected in the command
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `project_name` && composer create-project symfony/website-skeleton `project_name`"
+* docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton `project_name`"
+
+Doctrine
+
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `nazwa_projektu` && composer require symfony/orm-pack"
+
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `nazwa_projektu` && composer require --dev symfony/maker-bundle"
+
