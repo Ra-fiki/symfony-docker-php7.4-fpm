@@ -17,9 +17,15 @@ microservices, console applications or APIs:
 
 * `docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/skeleton symfony"`
 
-And you have all ready.
+# Data Base - Doctrine #
 
-# Slow set - Container preparation #
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack" && docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require --dev symfony/maker-bundle"
+
+And you have all ready.
+=================================
+
+
+# Normal set #
 
 We come up with the name of our project, e.g. `symfony`
 
@@ -50,9 +56,9 @@ If we have chosen a different name for the project then `symfony` replace the on
 
 * docker exec -it -u www-data symfony-php-fpm bash -c "composer create-project symfony/website-skeleton `project_name`"
 
-Doctrine
+# Connection to Data Base - Doctrine #
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `nazwa_projektu` && composer require symfony/orm-pack"
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack"
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `nazwa_projektu` && composer require --dev symfony/maker-bundle"
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require --dev symfony/maker-bundle"
 
