@@ -1,4 +1,4 @@
-FROM phpdockerio/php73-fpm:latest
+FROM phpdockerio/php74-fpm:latest
 WORKDIR "/var/www"
 VOLUME /var/www/
 
