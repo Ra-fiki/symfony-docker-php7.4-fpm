@@ -19,7 +19,7 @@ microservices, console applications or APIs:
 
 # Połączenie do bazy danych - Doctrine #
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack" && docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require --dev symfony/maker-bundle"
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack && composer require --dev symfony/maker-bundle"
 
 I wszystko jest już postawione
 ==================================
@@ -58,7 +58,5 @@ Jeśli wybraliśmy inną nazwę dla projektu to musimy nazwę `symfony` zastąpi
 
 # Połączenie do bazy danych - Doctrine #
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack"
-
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require --dev symfony/maker-bundle"
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack && composer require --dev symfony/maker-bundle"
 

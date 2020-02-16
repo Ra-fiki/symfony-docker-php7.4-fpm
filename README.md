@@ -19,7 +19,7 @@ microservices, console applications or APIs:
 
 # Data Base - Doctrine #
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack" && docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require --dev symfony/maker-bundle"
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack && composer require --dev symfony/maker-bundle"
 
 And you have all ready. http://localhost
 =================================
@@ -58,7 +58,5 @@ If we have chosen a different name for the project then `symfony` replace the on
 
 # Connection to Data Base - Doctrine #
 
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack"
-
-* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require --dev symfony/maker-bundle"
+* docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack && composer require --dev symfony/maker-bundle"
 
