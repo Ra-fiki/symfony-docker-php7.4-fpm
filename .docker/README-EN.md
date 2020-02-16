@@ -60,3 +60,16 @@ If we have chosen a different name for the project then `symfony` replace the on
 
 * docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/orm-pack && composer require --dev symfony/maker-bundle"
 
+# Database connection:
+
+Database credentials are in `.env` file in project
+For postgre database need to change `DATABASEURL` to
+
+* DATABASE_URL=postgresql://db_user:db_password@127.0.0.1:5432/db_name?serverVersion=11&charset=utf8
+
+and change `db_user`, `db_password`, `127.0.0.1`, `db_name`
+
+# Security issues:
+
+If during console execute error show with authentication then you should in
+`project/config/packages/security.yaml` comment firewalls, section `main`
