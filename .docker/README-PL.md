@@ -75,7 +75,7 @@ Jeśli podczas wykonywania w konsoli wyskoczy błąd z autoryzacją to trzeba w 
 `project/config/packages/security.yaml` zakomentować w sekcji firewalls, punkt `main`
 
 #Dodatkowe polecenia:
-docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/security-bundle symfony/validator symfony/form require symfony/orm-pack && composer require --dev symfony/maker-bundle"
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/security-bundle symfony/validator symfony/form symfony/orm-pack --dev symfony/maker-bundle"
 
 docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console make:user"
 

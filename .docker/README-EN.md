@@ -75,7 +75,7 @@ If during console execute error show with authentication then you should in
 `project/config/packages/security.yaml` comment firewalls, section `main`
 
 #Extra commends:
-docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/security-bundle symfony/validator symfony/form require symfony/orm-pack && composer require --dev symfony/maker-bundle"
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/security-bundle symfony/validator symfony/form symfony/orm-pack --dev symfony/maker-bundle"
 
 docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console make:user"
 
