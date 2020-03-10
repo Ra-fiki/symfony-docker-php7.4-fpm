@@ -32,7 +32,8 @@ Wymyślamy nazwę naszego projektu, np `symfony`
 **UWAGA**
 
 Jeśli wybierzemy inną nazwę projektu to zanim wykonamy kroki niżej musimy edytować plik `.docker/nginx/nginx.conf`
-i w linii nr 9 `root /var/www/symfony/public;` zamiast `symfony` podać naszą nazwę(bez spacji)
+i w linii nr 9 `root /var/www/symfony/public;` zamiast `symfony` podać naszą nazwę(bez spacji). To samo dotyczy pliku
+docker-compose.yml
 
 Przechodzimy w konsoli do katalogu z projektem i wywołujemy polecenie
 
