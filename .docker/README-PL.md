@@ -73,3 +73,18 @@ and change `db_user`, `db_password`, `127.0.0.1`, `db_name`
 
 Jeśli podczas wykonywania w konsoli wyskoczy błąd z autoryzacją to trzeba w pliku
 `project/config/packages/security.yaml` zakomentować w sekcji firewalls, punkt `main`
+
+#Dodatkowe polecenia:
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && composer require symfony/security-bundle symfony/validator symfony/form require symfony/orm-pack && composer require --dev symfony/maker-bundle"
+
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console make:user"
+
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console make:entity"
+
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console make:migration"
+
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console doctrine:migrations:migrate"
+
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console make:auth"
+
+docker exec -it -u www-data symfony-php-fpm bash -c "cd `symfony` && php bin/console make:controller ProductController"
